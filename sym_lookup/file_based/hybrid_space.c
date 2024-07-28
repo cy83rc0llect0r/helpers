@@ -14,6 +14,7 @@ unsigned long sym_addr_lookup(void)
     char *buf;
     loff_t pos = 0;
     int ret;
+    unsigned long sym_addr;
 
     ret = run_user_program();
     if (ret) {
